@@ -6,9 +6,9 @@ suzuki = Human.new('鈴木次郎', 30, '野球')
 sato   = Human.new('佐藤花子', 20, '映画')
 
 # メソッドを実行
-puts tanaka.say
-puts tanaka.think
-puts suzuki.say
-puts suzuki.think
-puts sato.say
-puts sato.think
+print tanaka.say
+print tanaka.think
+print suzuki.say
+print suzuki.think
+print sato.say
+print sato.think
