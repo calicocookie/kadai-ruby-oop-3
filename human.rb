@@ -3,9 +3,12 @@ require './thinkable'
 
 # 子クラス
 class Human < Animal
-  attr_accessor :hobby #:name, :age # 継承する変数は再定義不要
   
-  include Thinkable # 冒頭に合ったほうが継承・Mix-in関係がすぐに把握できる
+  # Mix-inはclass定義の直下に記述
+  include Thinkable
+  
+  # インスタンス変数
+  attr_accessor :hobby #:name, :age # 継承する変数は再定義不要
 
   def initialize(name, age, hobby)
     self.name = name
